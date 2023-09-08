@@ -6,6 +6,9 @@ const sequelize = require('./config/connection');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const db = require('./models');
+console.log(db);
+
 //TODO: Don't forget to configure your app to accept JSON
 app.use(express.static('public'));
 
